@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Prioject</title>
+    <title>Final Project</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/d46369e0cb.js" crossorigin="anonymous"><script>
+    <script src="https://kit.fontawesome.com/d46369e0cb.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </head>
 
@@ -15,7 +15,7 @@
         <nav>
             <div class="row nav__row">
                 <div class="nav__logo">
-                    <img class="nav__logo--img" src="assets/logo.2c489fc453a1783cbadacf914efa3df6.svg">
+                    <img src="assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" class="nav__logo--img" alt="">
                     <div class="nav__logo--title">Treact</div>
                 </div>
                 <div class="nav__links">
@@ -25,18 +25,19 @@
                     <a href="#" class="nav__link">Contact Us</a>
                     <a href="#" class="nav__link">Login</a>
                     <a href="#" class="nav__link nav__link--primary">Sign Up</a>
-                <button class="btn__menu" onclick="openMenu()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="btn__menu--svg">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
-                </button>
+                    <button class="btn__menu" onclick="openMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="btn__menu--svg">
+                            <line x1="3" y1="12" x2="21" y2="12" />
+                            <line x1="3" y1="6" x2="21" y2="6" />
+                            <line x1="3" y1="18" x2="21" y2="18" />
+                        </svg>
+                    </button>
                 </div>
-                </nav>
-                <div class="modal">
+            </div>
+        </nav>
+        <div class="modal">
             <button class="btn__menu btn__menu--close" onclick="closeMenu()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -45,46 +46,47 @@
                     <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg>
             </button>
-                <div class="modal__links">
-                    <a class="modal__link">About</a>
-                    <a class="modal__link">Blog</a>
-                    <a class="modal__link">Pricing</a>
-                    <a class="modal__link">Contact</a>
-                    <a class="modal__link">Login</a>
-                    <a class="modal__link modal__link--primary">Sign Up</a>
+            <div class="modal__links">
+                <a class="modal__link">About</a>
+                <a class="modal__link">Blog</a>
+                <a class="modal__link">Pricing</a>
+                <a class="modal__link">Contact</a>
+                <a class="modal__link">Login</a>
+                <a class="modal__link modal__link--primary">Sign Up</a>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="header__description">
+                        <h1>Beautiful React Templates<span class="purple"> for you.</span>
+                        </h1>
+                        <p class="header__description--para">
+                            My templates are easy to setup, understand and customize. Fully
+                            modular components with a variety of pages and components.
+                        </p>
+                        <div class="header__email">
+                            <input type="text" class="header__email--input" placeholder="Your E-mail Address">
+                            <button class="header__email--btn">Get Started</button>
+                        </div>
+                        <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
+                        <img src="assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt=""
+                            class="header__customers">
+                    </div>
+                    <figure class="header__img--wrapper">
+                        <img src="assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt=""
+                            class="header__img">
+                    </figure>
                 </div>
             </div>
-            <header>
-                <div class="container">
-                    <div class="row">
-                        <div class="header__description">
-                            <h1>Beautiful React Templates<span class="purple"> for you.</span>
-                            </h1>
-                            <p class="header__description--para">
-                                My templates are easy to setup, understand and customize. Fully
-                                modular components with a variety of pages and components.
-                            </p>
-                            <div class="header__email">
-                                <input type="text" class="header__email--input" placeholder="Your E-mail 
-                                Address">
-                                <button class="header__email--btn">Get Started</button>
-                            </div>
-                            <p class="header__customer--title">OUR TRUSTED CUSTOMERS</p>
-                            <img src="assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" class="header__customers">
-                        </div>
-                        <figure class="header__img--wrapper">
-                            <img src="assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
-                                class="header__img">
-                        </figure>
-                    </div>
-                </div>
-            </header>
+        </header>
     </section>
+
     <main>
         <section id="features">
             <div class="container">
                 <div class="row__narrow">
-                    <h4 class="section_tag">Service</h4>
+                    <h4 class="section__tag">Features</h4>
                     <h2 class="section__title">
                         We Have Amazing
                         <span class="purple">Service.</span>
@@ -94,21 +96,22 @@
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </div>
                     <div class="features">
-                        <div class="feature feature__row">
-                            <figure class="feature__img--wrapper">
-                                <img src="assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" class="feature__img">
-                            </figure>
-                            <div class="feature__text">
-                                <h2 class="feature__title">Secure</h2>
-                                <p class="feature__para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
-                                    quis nostrud.</p>
+                        <div class="feature">
+                            <div class="feature__row">
+                                <figure class="feature__img--wrapper">
+                                    <img src="assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt=""
+                                        class="feature__img">
+                                </figure>
+                                <div class="feature__text">
+                                    <h2 class="feature__title">Secure</h2>
+                                    <p class="feature__para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                                        quis nostrud.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="feature">
-                        <div class="features__row">
+                        <div class="feature feature__row">
                             <figure class="feature__img--wrapper">
-                                <img src="assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg"
+                                <img src="assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" alt=""
                                     class="feature__img">
                             </figure>
                             <div class="feature__text">
@@ -118,39 +121,36 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="feature">
-                        <div class="feature__row">
+                        <div class="feature feature__row">
                             <figure class="feature__img--wrapper">
-                                <img src="assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg"
+                                <img src="assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" alt=""
                                     class="feature__img">
                             </figure>
                             <div class="feature__text">
                                 <h2 class="feature__title">Customizable</h2>
-                                <p class="feature__para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis
+                                <p class="feature__para">Lorem ipsum donor amet siti ceali ut enim ad minim
+                                    veniam, quis
                                     nostrud.
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="feature">
-                        <div class="feature__row">
+                        <div class="feature feature__row">
                             <figure class="feature__img--wrapper">
-                                <img src="assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg"
+                                <img src="assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" alt=""
                                     class="feature__img">
                             </figure>
                             <div class="feature__text">
                                 <h2 class="feature__title">Reliable</h2>
-                                <p class="feature__para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                                <p class="feature__para">Lorem ipsum donor amet siti ceali ut enim ad minim
+                                    veniam,
                                     quis nostrud.
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="feature">
-                        <div class="feature__row">
+                        <div class="feature feature__row">
                             <figure class="feature__img--wrapper">
-                                <img src="assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" class="feature__img">
+                                <img src="assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" alt=""
+                                    class="feature__img">
                             </figure>
                             <div class="feature__text">
                                 <h2 class="feature__title">Fast</h2>
@@ -160,15 +160,15 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="feature">
-                        <div class="feature__row">
+                        <div class="feature feature__row">
                             <figure class="feature__img--wrapper">
-                                <img src="assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" class="feature__img">
+                                <img src="assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" alt=""
+                                    class="feature__img">
                             </figure>
                             <div class="feature__text">
                                 <h2 class="feature__title">Easy</h2>
-                                <p class="feature__para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                                <p class="feature__para">Lorem ipsum donor amet siti ceali ut enim
+                                    ad minim veniam,
                                     quis nostrud.
                                 </p>
                             </div>
@@ -176,26 +176,27 @@
                     </div>
                 </div>
             </div>
-            </div>
-            <section id="quality">
-                <div class="container">
-                    <div class="row">
-                        <div class="quality__description">
-                            <div class="section__tag">
-                                <h2 class="section__title">
-                                    Designed & Developed by<span class="purple">Professionals.</span>
-                                </h2>
-                                <p class="section__para">
-                                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
-                                    quis nostrud.
-                                </p>
-                                <button class="btn">Learn More</button>
-                            </div>
-                            <figure class="quality__img--wrapper">
-                                <img src="assets/hero-screenshot-1.40a097b525c2f8c9808e.png" class="quality__img">
-                                <svg viewbox="0 0 1280 1280" class="quality__grid">
-                                    <path
-                                        d="M55 33.5C44.5 37 35 47.6 32.8 58.3c-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 33.5c-15.1 5-25.3 21.6-22.2 36.2 2.5 11.9 13.6 23 25.4 25.5 19.4 4.1 39.5-14.2 37.5-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM311 
+        </section>
+        <section id="quality">
+            <div class="container">
+                <div class="row">
+                    <div class="quality__description">
+                        <div class="section__tag">Quality Work</div>
+                        <h2 class="section__title">
+                            Designed & Developed by<span class="purple">Professionals.</span>
+                        </h2>
+                        <p class="section__para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Enim quam cupiditate commodi qui excepturi laborum adipisci officiis, corporis possimus.
+                            Reiciendis?
+                        </p>
+                        <button class="btn">Learn More</button>
+                    </div>
+                    <figure class="quality__img--wrapper">
+                        <img src="assets/hero-screenshot-1.40a097b525c2f8c9808e.png" alt="" class="quality__img">
+                        <svg viewBox="0 0 1280 1280" class="quality__grid">
+                            <path
+                                d="M55 33.5C44.5 37 35 47.6 32.8 58.3c-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 33.5c-15.1 5-25.3 21.6-22.2 36.2 2.5 11.9 13.6 23 25.4 25.5 19.4 4.1 39.5-14.2 37.5-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM311 
                                     33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM439 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM567 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM695 
                                     33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM823 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM951 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1079 
                                     33.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5zM1207 33.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5zM55 161.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 
@@ -204,150 +205,162 @@
                                     14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1079 161.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5zM1207 161.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5zM55 289.5c-10.5 3.5-20 
                                     14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 289.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM311 289.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM439 289.5c-10.5 3.5-20 14.1-22.2 
                                     24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM567 289.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM695 289.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM823 289.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM951 289.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1079 289.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1207 289.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM55 417.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 417.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM311 417.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM439 417.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM567 417.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM695 417.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM823 417.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM951 417.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1079 417.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1207 417.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM55 545.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 545.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM311 545.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM439 545.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM567 545.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM695 545.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM823 545.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM951 545.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1079 545.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1207 545.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM55 673.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 673.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM311 673.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM439 673.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM567 673.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM695 673.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM823 673.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM951 673.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1079 673.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1207 673.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM55 801.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 801.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM311 801.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5zM439 801.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5zM567 801.5c-15.1 5-25.3 21.6-22.2 36.2 2.5 11.9 13.6 23 25.5 25.5 19.3 4.1 39.4-14.2 37.4-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM695 801.5c-15.1 5-25.3 21.6-22.2 36.2 2.5 11.9 13.6 23 25.5 25.5 19.3 4.1 39.4-14.2 37.4-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM823 801.5c-15.1 5-25.3 21.6-22.2 36.2 2.5 11.9 13.6 23 25.5 25.5 19.3 4.1 39.4-14.2 37.4-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM951 801.5c-15.1 5-25.3 21.6-22.2 36.2 2.5 11.9 13.6 23 25.5 25.5 19.3 4.1 39.4-14.2 37.4-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1079 801.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1207 801.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM55 929.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 929.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM311 929.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5zM439 929.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5zM567 929.5c-15.1 5-25.3 21.6-22.2 36.2 2.5 11.9 13.6 23 25.5 25.5 19.3 4.1 39.4-14.2 37.4-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM695 929.5c-15.1 5-25.3 21.6-22.2 36.2 2.5 11.9 13.6 23 25.5 25.5 19.3 4.1 39.4-14.2 37.4-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM823 929.5c-15.1 5-25.3 21.6-22.2 36.2 2.5 11.9 13.6 23 25.5 25.5 19.3 4.1 39.4-14.2 37.4-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM951 929.5c-15.1 5-25.3 21.6-22.2 36.2 2.5 11.9 13.6 23 25.5 25.5 19.3 4.1 39.4-14.2 37.4-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1079 929.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1207 929.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM55 1057.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 1057.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM311 1057.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5zM439 1057.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5zM567 1057.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM695 1057.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM823 1057.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM951 1057.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1079 1057.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1207 1057.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM55 1185.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 1185.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM311 1185.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM439 1185.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM567 1185.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM695 1185.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM823 1185.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM951 1185.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1079 1185.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1207 1185.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6z">
-                                    </path>
-                                </svg>
-                            </figure>
-                        </div>
-                    </div>
-            </section>
-            <section id="steps">
-                <div class="container">
-                    <div class="row">
-                        <figure class="steps__img--wrapper">
-                            <img src="assets/hero-screenshot-2.241aac1fbc66db29d873.png class=steps__img"
-                                alt="Dashboard Screenshot">
-                            <svg viewbox="0 0 1280 1280" class="step__grid" xmlns="http://www.w3.org/2000/svg">
-                                <defs>
-                                    <path id="line-of-balls"
-                                        d="M55 33.5C44.5 37 35 47.6 32.8 58.3c-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 33.5c-15.1 5-25.3 21.6-22.2 36.2 2.5 11.9 13.6 23 25.4 25.5 19.4 4.1 39.5-14.2 37.5-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM311 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM439 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM567 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM695 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM823 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM951 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1079 33.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5zM1207 33.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5z">
-                                    </path>
-                                </defs>
-                                <g fill="rgba(100, 21, 255, 0.15)">
-                                    <use href="#line-of-balls" transform="translate(0, 0)"></use>
-                                    <use href="#line-of-balls" transform="translate(0, 100)"></use>
-                                    <use href="#line-of-balls" transform="translate(0, 200)"></use>
-                                    <use href="#line-of-balls" transform="translate(0, 300)"></use>
-                                    <use href="#line-of-balls" transform="translate(0, 400)"></use>
-                                    <use href="#line-of-balls" transform="translate(0, 500)"></use>
-                                    <use href="#line-of-balls" transform="translate(0, 600)"></use>
-                                    <use href="#line-of-balls" transform="translate(0, 700)"></use>
-                                    <use href="#line-of-balls" transform="translate(0, 800)"></use>
-                                    <use href="#line-of-balls" transform="translate(0, 900)"></use>
-                                </g>
-                            </svg>
-                        </figure>
-                        <div class="step__description">
-                            <div class="section__bag">STEPS</div>
-                            <h2 class="section__title">
-                                Easy to
-                                <span class="purple">Get Started</span>
-                            </h2>
-                            <div class="step__list">
-                                <div class="step">
-                                    <div class="step__number">01</div>
-                                    <div class="step__description">
-                                        <div class="step__title">Register</div>
-                                        <p class="step__para">
-                                            Create an account with us using Google or Facebook.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="step">
-                                    <div class="step__number">02</div>
-                                    <div class="step__description">
-                                        <div class="step__title">Download</div>
-                                        <p class="step__para">Browse and Download the template that you like from the
-                                            marketplace.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="step">
-                                    <div class="step__number">03</div>
-                                    <div class="step__description">
-                                        <div class="step__title">Run</div>
-                                        <p class="step__para">
-                                            Follow the instructions to setup and customize the template to
-                                            your needs.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                            </path>
+                        </svg>
+                    </figure>
                 </div>
-            </section>
-            <section id="values">
-                <div class="container">
-                    <div class="row">
-                        <div class="values__description">
-                            <div class="section__tag">VALUES</div>
-                            <h2 class="section__title">
-                                We Always Abide by Our
-                                <span class="purple">Principles.</span>
-                            </h2>
-                            <div class="section__para">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </div>
-                            <div class="values__list">
-                                <div class="value">
-                                    <div class="value__title">
-                                        <figure class="value__img--wrapper">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="rgba(39, 103, 73, 1)"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                class="value__img">
-                                                <line x1="12" y1="1" x2="12" y2="23"></line>
-                                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                                                <line x1="12" y1="1" x2="12" y2="23"></line>
-                                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                                            </svg>
-                                        </figure>
-                                        <div class="value__name">Affordable</div>
-                                    </div>
-                                    <div class="value__para">
-                                        We promise to offer you the best rate we can - at par with the industry
-                                        standard.
-                                    </div>
-                                </div>
-                                <div class="value">
-                                    <div class="value__title">
-                                        <figure class="value__img--wrapper">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="rgba(155, 44, 44, 1)"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                class="value__img">
-                                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                                            </svg>
-                                        </figure>
-                                        <div class="value__name">Professionalism</div>
-                                    </div>
-                                    <div class="value__para">
-                                        We assure you that our templates are designed and created by professional
-                                        designers.
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="btn">Learn More</button>
-                        </div>
-                        <img class="values__img"
-                            src="assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg">
-                    </div>
-                </div>
-            </section>
-            <section id="pricing">
-                <div class="container">
-                    <div class="row">
-                        <div class="section__tag">pricing</div>
+            </div>
+            </div>
+        </section>
+        <section id="steps">
+            <div class="container">
+                <div class="row">
+                    <figure class="steps__img--wrapper">
+                        <img src="assets/hero-screenshot-2.241aac1fbc66db29d873.png" alt="Dashboard Screenshot"
+                            class="steps__img">
+                        <svg viewBox="0 0 1280 1280" class="steps__grid" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <path id="line-of-balls"
+                                    d="M55 33.5C44.5 37 35 47.6 32.8 58.3c-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 33.5c-15.1 5-25.3 21.6-22.2 36.2 2.5 11.9 13.6 23 25.4 25.5 19.4 4.1 39.5-14.2 37.5-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM311 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM439 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM567 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM695 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM823 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM951 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1079 33.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5zM1207 33.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5z">
+                                </path>
+                            </defs>
+                            <g fill="rgba(100, 21, 255, 0.15)">
+                                <use href="#line-of-balls" transform="translate(0, 0)"></use>
+                                <use href="#line-of-balls" transform="translate(0, 100)"></use>
+                                <use href="#line-of-balls" transform="translate(0, 200)"></use>
+                                <use href="#line-of-balls" transform="translate(0, 300)"></use>
+                                <use href="#line-of-balls" transform="translate(0, 400)"></use>
+                                <use href="#line-of-balls" transform="translate(0, 500)"></use>
+                                <use href="#line-of-balls" transform="translate(0, 600)"></use>
+                                <use href="#line-of-balls" transform="translate(0, 700)"></use>
+                                <use href="#line-of-balls" transform="translate(0, 800)"></use>
+                                <use href="#line-of-balls" transform="translate(0, 900)"></use>
+                            </g>
+                        </svg>
+                    </figure>
+                    <div class="step__description">
+                        <div class="section__tag">STEPS</div>
                         <h2 class="section__title">
-                            Reasonable & Flexible
-                            <span class="purple">Plans</span>
+                            Easy to
+                            <span class="purple">Get Started</span>
                         </h2>
-                        <div class="plans">
+                        <div class="step__list">
+                            <div class="step">
+                                <div class="step__number">01</div>
+                                <div class="step__description">
+                                    <div class="step__title">Register</div>
+                                    <p class="step__para">
+                                        Create an account with us using Google or Facebook.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step__number">02</div>
+                                <div class="step__description">
+                                    <div class="step__title">Download</div>
+                                    <p class="step__para">Browse and Download the template that
+                                        you like from the
+                                        marketplace.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step__number">03</div>
+                                <div class="step__description">
+                                    <div class="step__title">Run</div>
+                                    <p class="step__para">
+                                        Follow the instructions to setup and customize the
+                                        template to
+                                        your needs.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="values">
+            <div class="container">
+                <div class="row">
+                    <div class="values__description">
+                        <div class="section__tag">VALUES</div>
+                        <h2 class="section__title">
+                            We Always Abide by Our
+                            <span class="purple">Principles.</span>
+                        </h2>
+                        <div class="section__para">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                        </div>
+                        <div class="values__list">
+                            <div class="value">
+                                <div class="value__title">
+                                    <figure class="value__img--wrapper">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="rgba(39, 103, 73, 1)"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="value__img">
+                                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6">
+                                            </path>
+                                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6">
+                                            </path>
+                                        </svg>
+                                    </figure>
+                                    <div class="value__name">Affordable</div>
+                                </div>
+                                <div class="value__para">
+                                    We promise to offer you the best rate we can - at par with
+                                    the industry
+                                    standard.
+                                </div>
+                            </div>
+                            <div class="value">
+                                <div class="value__title">
+                                    <figure class="value__img--wrapper">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="rgba(155, 44, 44, 1)"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="value__img">
+                                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16">
+                                            </path>
+                                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16">
+                                            </path>
+                                        </svg>
+                                    </figure>
+                                    <div class="value__name">Professionalism</div>
+                                </div>
+                                <div class="value__para">
+                                    We assure you that our templates are designed and created by
+                                    professional
+                                    designers.
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn">Learn More</button>
+                    </div>
+                    <img class="values__img" alt=""
+                        src="assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg">
+                </div>
+            </div>
+        </section>
+        <section id="pricing">
+            <div class="container">
+                <div class="row">
+                    <div class="section__tag">pricing</div>
+                    <h2 class="section__title">
+                        Reasonable & Flexible
+                        <span class="purple">Plans</span>
+                    </h2>
+                    <div class="plans">
                         <div class="plan">
                             <div class="plan__stripe"></div>
                             <div class="plan__top">
@@ -357,7 +370,7 @@
                             </div>
                             <div class="plan__middle">
                                 <div class="plan__target">For Individuals</div>
-                                <p class="plan__feature">30 Tempalates</p>
+                                <p class="plan__feature">30 Templates</p>
                                 <p class="plan__feature">7 Landings</p>
                                 <p class="plan__feature">12 Internal Pages</p>
                                 <p class="plan__feature">Basic Assistance</p>
@@ -368,38 +381,39 @@
                         </div>
                         <div class="plan">
                             <div class="plan__stripe"></div>
-                            <div class="plan__top"></div>
-                            <div class="plan__name">BUSINESS</div>
-                            <div class="plan__price">$37.99</div>
-                            <div class="plan__duration">MONTHLY</div>
+                            <div class="plan__top">
+                                <div class="plan__name">BUSINESS</div>
+                                <div class="plan__price">$37.99</div>
+                                <div class="plan__duration">MONTHLY</div>
+                            </div>
+                            <div class="plan__middle">
+                                <div class="plan__target">For Small Businesses</div>
+                                <div class="plan__feature">60 Templates</div>
+                                <div class="plan__feature">15 Landing Pages</div>
+                                <div class="plan__feature">22 Internal Pages</div>
+                                <div class="plan__feature">Priority Assistance</div>
+                            </div>
+                            <div class="plan__bottom">
+                                <button class="plan__button">buy now</button>
+                            </div>
                         </div>
-                        <div class="plan__middle">
-                            <div class="plan__target">For Small Businesses</div>
-                            <div class="plan__feature">60 Templates</div>
-                            <div class="plan__feature">15 Landing Pages</div>
-                            <div class="plan__feature">22 Internal Pages</div>
-                            <div class="plan__feature">Priority Assistance</div>
-                        </div>
-                        <div class="plan__bottom">
-                            <button class="plan__button">buy now</button>
-                        </div>
-                    </div>
-                    <div class="plan">
-                        <div class="plan__stripe"></div>
-                        <div class="plan__top">
-                            <div class="plan__name">ENTERPRISE</div>
-                            <div class="plan__price">$57.99</div>
-                            <div class="plan__duration">MONTHLY</div>
-                        </div>
-                        <div class="plan__middle">
-                            <p class="plan__target">For Large Companies</p>
-                            <p class="plan__features">90 Templates</p>
-                            <p class="plan__features">27 Landing Pages</p>
-                            <p class="plan__features">37 Internal Pages</p>
-                            <p class="plan__features">Personal Assistance</p>
-                        </div>
-                        <div class="plan__bottom">
-                            <button class="plan__botton">buy now</button>
+                        <div class="plan">
+                            <div class="plan__stripe"></div>
+                            <div class="plan__top">
+                                <div class="plan__name">ENTERPRISE</div>
+                                <div class="plan__price">$57.99</div>
+                                <div class="plan__duration">MONTHLY</div>
+                            </div>
+                            <div class="plan__middle">
+                                <p class="plan__target">For Large Companies</p>
+                                <p class="plan__features">90 Templates</p>
+                                <p class="plan__features">27 Landing Pages</p>
+                                <p class="plan__features">37 Internal Pages</p>
+                                <p class="plan__features">Personal Assistance</p>
+                            </div>
+                            <div class="plan__bottom">
+                                <button class="plan__button">buy now</button>
+                            </div>
                         </div>
                     </div>
                     <svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg"
@@ -411,77 +425,69 @@
                         </g>
                     </svg>
                 </div>
-                </div>
-                </div>
-            </section>
-            <section id="testimonials">
-                <div class="container">
-                    <div class="row">
-                        <img src="assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg"
-                            alt="testimonials__img">
-                    </div>
+            </div>
+        </section>
+        <section id="testimonials">
+            <div class="container">
+                <div class="row">
+                    <img src="assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg" alt="testimonials__img">
                     <div class="testimonial__description">
                         <div class="section__tag">testimonials</div>
-                        <h2 class="section__title">
-                            Our Clients
-                            <span class="purple">Love Us</span>
-                        </h2>
-                        <p class="section__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
-                        <div class="testimonials">
-                            <div class="testimonial__rating">
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                </i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                </i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                </i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                </i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                </i>
+                    </div>
+                    <h2 class="section__title">
+                        Our Clients
+                        <span class="purple">Love Us</span>
+                    </h2>
+                    <p class="section__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
+                    <div class="testimonials">
+                        <div class="testimonial__rating">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="testimonial__title">Amazing User Experience</h3>
+                        <p class="testimonial__para">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco.
+                        </p>
+                        <div class="testimonial__bottom">
+                            <div class="testimonnial__profile">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3.25&amp;w=512&amp;h=512&amp;q=80"
+                                    class="testimonial__img" alt="Customer">
+                                <div class="testimonial__details">
+                                    <div class="testimonial__name">Charlotte Hale</div>
+                                    <div class="testimonial__role">Director, Delos Inc.</div>
+                                </div>
                             </div>
-                            <h3 class="testimonial__title">Amazing User Experience</h3>
-                            <p class="testimonial__para">Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco.
-                            </p>
-                            <div class="testimonial__bottom">
-                                <div class="testimonnial__profile">
-                                    <img src="
-                                        https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3.25&amp;w=512&amp;h=512&amp;q=80"
-                                        class="testimonial__img">"
-                                    <div class="testimonial__details">
-                                        <div class="testimonial__name">Charlotte Hale</div>
-                                        <div class="testimonial__role">Director, Delos Inc.</div>
-                                    </div>
-                                </div>
-                                <div class="testimonial__button">
-                                    <button class="testimonial__button">
-                                        <svg fill="none" stroke="rgb(100,21,255)" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24">
-                                            <path d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-                                        </svg>
-                                    </button>
-                                    <div class="divider"></div>
-                                    <button class="testimonial__button">
-                                        <svg fill="none" stroke="rgb(100,21,255)" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24">
-                                            <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                                        </svg>
-                                    </button>
-                                </div>
+                            <div class="testimonial__button">
+                                <button class="testimonial__button">
+                                    <svg fill="none" stroke="rgb(100,21,255)" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24">
+                                        <path d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                                    </svg>
+                                </button>
+                                <div class="divider"></div>
+                                <button class="testimonial__button">
+                                    <svg fill="none" stroke="rgb(100,21,255)" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24">
+                                        <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                </div>
-            </section>
-            <section id="start">
-                <div class="container">
-                    <div class="row"></div>
+            </div>
+        </section>
+
+        <section id="start">
+            <div class="container">
+                <div class="row">
                     <svg viewBox="0 0 600 600" class="start__blob--1">
                         <g transform="translate(300,300)">
                             <path
@@ -508,8 +514,8 @@
                         </div>
                     </div>
                 </div>
-                </div>
-            </section>
+            </div>
+        </section>
     </main>
     <footer>
         <svg viewBox="0 0 600 600" class="footer__blob--1">
@@ -540,15 +546,16 @@
                     </a>
                 </div>
                 <div class="footer__column">
-                <div class="footer__column--title">PRODUCT</div>
-                <a class="footer__column__link">Log in
-                </a>
-                <a class="footer__column__link">Personal
-                </a>
-                <a class="footer__column__link">Business
-                </a>
-                <a class="footer__column__link">Team
-                </a>
+                    <div class="footer__column--title">PRODUCT</div>
+                    <a class="footer__column__link">Log in
+                    </a>
+                    <a class="footer__column__link">Personal
+                    </a>
+                    <a class="footer__column__link">Business
+                    </a>
+                    <a class="footer__column__link">Team
+                    </a>
+                </div>
                 <div class="footer__column">
                     <div class="footer__column--title">PRESS</div>
                     <a class="footer__column__link">Logos
@@ -575,9 +582,9 @@
                     <div class="footer__column--title">LEGAL</div>
                     <a class="footer__column__link">GDPR
                     </a>
-                    <a class="footer__column__link">Privacy Privacy
+                    <a class="footer__column__link">Privacy Policy
                     </a>
-                    <a class="footer__column__link">Term of Service
+                    <a class="footer__column__link">Terms of Service
                     </a>
                     <a class="footer__column__link">Disclaimer
                     </a>
@@ -585,7 +592,7 @@
             </div>
             <div class="footer__divider"></div>
             <div class="footer__bottom">
-                <img src="assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" alt class="footer__logo--img">
+                <img src="assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" alt="" class="footer__logo--img">
                 <h5 class="footer__logo--text">Treact Inc.</h5>
             </div>
             <div class="footer__copyright">© 2025 Treact Inc. All Rights Reserved.
@@ -613,7 +620,6 @@
                     </svg>
                 </a>
             </div>
-        </div>
         </div>
     </footer>
 </body>
