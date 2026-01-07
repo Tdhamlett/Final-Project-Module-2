@@ -7,7 +7,7 @@
     <title>Final Project</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d46369e0cb.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -25,16 +25,16 @@
                     <a href="#" class="nav__link">Contact Us</a>
                     <a href="#" class="nav__link">Login</a>
                     <a href="#" class="nav__link nav__link--primary">Sign Up</a>
-                    <button class="btn__menu" onclick="openMenu()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="btn__menu--svg">
-                            <line x1="3" y1="12" x2="21" y2="12" />
-                            <line x1="3" y1="6" x2="21" y2="6" />
-                            <line x1="3" y1="18" x2="21" y2="18" />
-                        </svg>
-                    </button>
                 </div>
+                <button class="btn__menu" onclick="openMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="btn__menu--svg">
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+                </button>
             </div>
         </nav>
         <div class="modal">
@@ -47,16 +47,16 @@
                 </svg>
             </button>
             <div class="modal__links">
-                <a class="modal__link">About</a>
-                <a class="modal__link">Blog</a>
-                <a class="modal__link">Pricing</a>
-                <a class="modal__link">Contact</a>
-                <a class="modal__link">Login</a>
-                <a class="modal__link modal__link--primary">Sign Up</a>
+                <a href="#about" class="modal__link" onclick="closeMenu()">About</a>
+                <a href="#blog" class="modal__link" onclick="closeMenu()">Blog</a>
+                <a href="#pricing" class="modal__link" onclick="closeMenu()">Pricing</a>
+                <a href="#contact us" class="modal__link" onclick="closeMenu()">Contact</a>
+                <a href="#login" class="modal__link" onclick="closeMenu()">Login</a>
+                <a href="#signup" class="modal__link modal__link--primary" onclick="closeMenu()">Sign Up</a>
             </div>
         </div>
         <header>
-            <div class="container">
+            <div class=" container">
                 <div class="row">
                     <div class="header__description">
                         <h1>Beautiful React Templates<span class="purple"> for you.</span>
@@ -360,6 +360,10 @@
                         Reasonable & Flexible
                         <span class="purple">Plans</span>
                     </h2>
+                    <p class="section__para">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
                     <div class="plans">
                         <div class="plan">
                             <div class="plan__stripe"></div>
@@ -430,41 +434,42 @@
         <section id="testimonials">
             <div class="container">
                 <div class="row">
-                    <img src="assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg" alt="testimonials__img">
-                    <div class="testimonial__description">
+                    <img src="assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg" alt
+                        class="testimonials__img">
+                    <div class="testimonials__description">
                         <div class="section__tag">testimonials</div>
-                    </div>
-                    <h2 class="section__title">
-                        Our Clients
-                        <span class="purple">Love Us</span>
-                    </h2>
-                    <p class="section__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
-                    <div class="testimonials">
-                        <div class="testimonial__rating">
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                            <i class="fas fa-star" aria-hidden="true"></i>
-                        </div>
-                        <h3 class="testimonial__title">Amazing User Experience</h3>
-                        <p class="testimonial__para">Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco.
-                        </p>
-                        <div class="testimonial__bottom">
-                            <div class="testimonnial__profile">
-                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3.25&amp;w=512&amp;h=512&amp;q=80"
-                                    class="testimonial__img" alt="Customer">
-                                <div class="testimonial__details">
-                                    <div class="testimonial__name">Charlotte Hale</div>
-                                    <div class="testimonial__role">Director, Delos Inc.</div>
+                        <h2 class="section__title">
+                            Our Clients
+                            <span class="purple">Love Us.</span>
+                        </h2>
+                        <p class="section__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
+                        <div class="testimonial">
+                            <div class="testimonials__rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="testimonial__title">Amazing User Experience</h3>
+                            <p class="testimonial__para">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco.
+                            </p>
+                            <div class="testimonial__bottom">
+                                <div class="testimonial__profile">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3.25&amp;w=512&amp;h=512&amp;q=80"
+                                        class="testimonial__img" alt="Customer">
+                                    <div class="testimonial__details">
+                                        <div class="testimonial__name">Charlotte Hale</div>
+                                        <div class="testimonial__role">Director, Delos Inc.</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="testimonial__button">
+                            <div class="testimonial__buttons">
                                 <button class="testimonial__button">
                                     <svg fill="none" stroke="rgb(100,21,255)" stroke-linecap="round"
                                         stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24">
@@ -536,57 +541,57 @@
             <div class="footer__columns">
                 <div class="footer__column">
                     <div class="footer__column--title">MAIN</div>
-                    <a class="footer__column__link">Blog
+                    <a class="footer__column--link">Blog
                     </a>
-                    <a class="footer__column__link">FAQs
+                    <a class="footer__column--link">FAQs
                     </a>
-                    <a class="footer__column__link">Support
+                    <a class="footer__column--link">Support
                     </a>
-                    <a class="footer__column__link">About Us
+                    <a class="footer__column--link">About Us
                     </a>
                 </div>
                 <div class="footer__column">
                     <div class="footer__column--title">PRODUCT</div>
-                    <a class="footer__column__link">Log in
+                    <a class="footer__column--link">Log in
                     </a>
-                    <a class="footer__column__link">Personal
+                    <a class="footer__column--link">Personal
                     </a>
-                    <a class="footer__column__link">Business
+                    <a class="footer__column--link">Business
                     </a>
-                    <a class="footer__column__link">Team
+                    <a class="footer__column--link">Team
                     </a>
                 </div>
                 <div class="footer__column">
                     <div class="footer__column--title">PRESS</div>
-                    <a class="footer__column__link">Logos
+                    <a class="footer__column--link">Logos
                     </a>
-                    <a class="footer__column__link">Events
+                    <a class="footer__column--link">Events
                     </a>
-                    <a class="footer__column__link">Stories
+                    <a class="footer__column--link">Stories
                     </a>
-                    <a class="footer__column__link">Office
+                    <a class="footer__column--link">Office
                     </a>
                 </div>
                 <div class="footer__column">
                     <div class="footer__column--title">TEAM</div>
-                    <a class="footer__column__link">Career
+                    <a class="footer__column--link">Career
                     </a>
-                    <a class="footer__column__link">Founders
+                    <a class="footer__column--link">Founders
                     </a>
-                    <a class="footer__column__link">Culture
+                    <a class="footer__column--link">Culture
                     </a>
-                    <a class="footer__column__link">Onboarding
+                    <a class="footer__column--link">Onboarding
                     </a>
                 </div>
                 <div class="footer__column">
                     <div class="footer__column--title">LEGAL</div>
-                    <a class="footer__column__link">GDPR
+                    <a class="footer__column--link">GDPR
                     </a>
-                    <a class="footer__column__link">Privacy Policy
+                    <a class="footer__column--link">Privacy Policy
                     </a>
-                    <a class="footer__column__link">Terms of Service
+                    <a class="footer__column--link">Terms of Service
                     </a>
-                    <a class="footer__column__link">Disclaimer
+                    <a class="footer__column--link">Disclaimer
                     </a>
                 </div>
             </div>
