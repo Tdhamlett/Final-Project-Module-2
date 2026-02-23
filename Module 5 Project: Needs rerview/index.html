@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Go Green Auto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <div class="nav__container">
+      <a class="nav__brand" href="#">
+        <img src="assets/Go Green Auto Header logo .png" alt="Go Green Auto logo" class="nav__logo--img" />
+      </a>
+      <nav class="nav__links">
+        <a class="nav__link" href="#">Home</a>
+        <a class="nav__link" href="#">New</a>
+        <a class="nav__link" href="#">Brands</a>
+        <a class="nav__link" href="#">Watchlist</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay">
+        <p class="eyebrow">Featured Premiere</p>
+        <h1>Lucid Air Sapphire</h1>
+        <p class="hero-copy">
+          Triple-motor performance, luxury cabin, and stunning all-electric acceleration.
+          Explore specs, range, and charging in one cinematic view.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" type="button">Play Trailer</button>
+          <button class="btn btn-muted" type="button">More Info</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Trending Electric Cars</h2>
+      <div class="row-shell">
+        <button class="row-nav prev" type="button" aria-label="Scroll left" data-row-target="trending">
+          &#10094;
+        </button>
+        <div class="card-row" id="trending">
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1620891549027-942fdc95d3f5?q=80&w=1200&auto=format&fit=crop"
+              alt="Tesla Model S driving on road" />
+            <div class="card-meta">
+              <h3>Tesla Model S</h3>
+              <p>Up to 405 mi range</p>
+            </div>
+          </article>
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=1200&auto=format&fit=crop"
+              alt="Porsche Taycan parked in city" />
+            <div class="card-meta">
+              <h3>Porsche Taycan</h3>
+              <p>Performance EV icon</p>
+            </div>
+          </article>
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1617704548623-340376564e68?q=80&w=1200&auto=format&fit=crop"
+              alt="Hyundai IONIQ 5 front angle" />
+            <div class="card-meta">
+              <h3>Hyundai IONIQ 5</h3>
+              <p>Fast-charge ready</p>
+            </div>
+          </article>
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1632245889029-e406faaa34cd?q=80&w=1200&auto=format&fit=crop"
+              alt="BMW i4 in motion" />
+            <div class="card-meta">
+              <h3>BMW i4</h3>
+              <p>Sport sedan feel</p>
+            </div>
+          </article>
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1648329498496-6ab8f89938e2?q=80&w=1200&auto=format&fit=crop"
+              alt="Mercedes EQS side profile" />
+            <div class="card-meta">
+              <h3>Mercedes EQS</h3>
+              <p>Executive comfort EV</p>
+            </div>
+          </article>
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?q=80&w=1200&auto=format&fit=crop"
+              alt="Lucid Air parked near mountains" />
+            <div class="card-meta">
+              <h3>Lucid Air</h3>
+              <p>Luxury long range</p>
+            </div>
+          </article>
+        </div>
+        <button class="row-nav next" type="button" aria-label="Scroll right" data-row-target="trending">
+          &#10095;
+        </button>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Electric SUVs</h2>
+      <div class="row-shell">
+        <button class="row-nav prev" type="button" aria-label="Scroll left" data-row-target="suvs">
+          &#10094;
+        </button>
+        <div class="card-row" id="suvs">
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1669211831099-1c88584f213f?q=80&w=1200&auto=format&fit=crop"
+              alt="Rivian R1S off-road style view" />
+            <div class="card-meta">
+              <h3>Rivian R1S</h3>
+              <p>Adventure electric SUV</p>
+            </div>
+          </article>
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1670620583125-6f63b56a2f19?q=80&w=1200&auto=format&fit=crop"
+              alt="Volvo EX30 in urban setting" />
+            <div class="card-meta">
+              <h3>Volvo EX30</h3>
+              <p>Compact premium SUV</p>
+            </div>
+          </article>
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1631295868223-63265b40d9e4?q=80&w=1200&auto=format&fit=crop"
+              alt="Ford Mustang Mach-E front view" />
+            <div class="card-meta">
+              <h3>Mach-E</h3>
+              <p>Athletic crossover</p>
+            </div>
+          </article>
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1616455579100-2ceaa4eb2d37?q=80&w=1200&auto=format&fit=crop"
+              alt="Kia EV9 parked at sunset" />
+            <div class="card-meta">
+              <h3>Kia EV9</h3>
+              <p>Three-row electric SUV</p>
+            </div>
+          </article>
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1635783805743-5bc4145f4f0f?q=80&w=1200&auto=format&fit=crop"
+              alt="Audi Q8 e-tron in silver" />
+            <div class="card-meta">
+              <h3>Audi Q8 e-tron</h3>
+              <p>Premium everyday EV</p>
+            </div>
+          </article>
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1615800098779-1be32e60cca8?q=80&w=1200&auto=format&fit=crop"
+              alt="Nissan Ariya in white color" />
+            <div class="card-meta">
+              <h3>Nissan Ariya</h3>
+              <p>Sleek family crossover</p>
+            </div>
+          </article>
+        </div>
+        <button class="row-nav next" type="button" aria-label="Scroll right" data-row-target="suvs">
+          &#10095;
+        </button>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Coming Soon</h2>
+      <div class="row-shell">
+        <button class="row-nav prev" type="button" aria-label="Scroll left" data-row-target="soon">
+          &#10094;
+        </button>
+        <div class="card-row" id="soon">
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=1200&auto=format&fit=crop"
+              alt="Polestar concept style electric car" />
+            <div class="card-meta">
+              <h3>Polestar 5</h3>
+              <p>Grand touring EV</p>
+            </div>
+          </article>
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1536700503339-1e4b06520771?q=80&w=1200&auto=format&fit=crop"
+              alt="Cadillac Celestiq luxury electric concept" />
+            <div class="card-meta">
+              <h3>Cadillac Celestiq</h3>
+              <p>Ultra-luxury electric</p>
+            </div>
+          </article>
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1593941707882-a56bbc8df4f1?q=80&w=1200&auto=format&fit=crop"
+              alt="Future EV silhouette at night" />
+            <div class="card-meta">
+              <h3>Afeela EV</h3>
+              <p>Software-first vehicle</p>
+            </div>
+          </article>
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=1200&auto=format&fit=crop"
+              alt="Electric sedan concept in city lights" />
+            <div class="card-meta">
+              <h3>Genesis GV90</h3>
+              <p>Flagship electric SUV</p>
+            </div>
+          </article>
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1550355291-bbee04a92027?q=80&w=1200&auto=format&fit=crop"
+              alt="Sports electric coupe concept" />
+            <div class="card-meta">
+              <h3>Lotus Type 135</h3>
+              <p>Electric sports coupe</p>
+            </div>
+          </article>
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop"
+              alt="Electric crossover near bridge" />
+            <div class="card-meta">
+              <h3>Scout Traveler EV</h3>
+              <p>Retro off-road revival</p>
+            </div>
+          </article>
+        </div>
+        <button class="row-nav next" type="button" aria-label="Scroll right" data-row-target="soon">
+          &#10095;
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+<footer class="footer">
+  <div class="footer__content">
+  <div class="footer__brand">
+    <img src="assets/Go Green Car website Footer.png" alt="Go Green Auto Logo" class="footer__logo--img" />
+  </div>
+  <p>&copy; 2026 Go Green Auto. All rights reserved.</p>
+  </div>
+</footer>
+
+</html>

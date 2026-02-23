@@ -60,6 +60,8 @@ p {
 
 .container {
   padding: 96px 0px;
+  display: flex;
+  flex-direction: row;
 }
 
 .purple {
@@ -342,7 +344,7 @@ header {
 
 .header__email--btn {
   z-index: 2;
-  height: calc(100% - 6px);
+  height: calc(100% - 16px);
   width: 160px;
   background-color: rgb(100, 21, 255);
   color: white;
@@ -403,6 +405,7 @@ FEATURES
   display: flex;
   align-items: flex-start;
   padding: 32px 24px;
+  gap: 24px;
 }
 
 .feature__img--wrapper {
@@ -421,7 +424,7 @@ FEATURES
 }
 
 .feature__text {
-  margin-left: 0px;
+  margin-right: 16px;
   margin-top: 16px;
 }
 
@@ -524,9 +527,9 @@ STEPS
 }
 
 .steps__grid {
-  position: absolute;
+  position: relative;
   bottom: 100px;
-  left: 50%;
+  left: 41%;
   transform: translateX(-50);
   width: 10rem;
   height: 10rem;
@@ -583,6 +586,11 @@ STEPS
   flex-direction: column;
   margin-left: 24px;
   max-width: 320px;
+}
+
+.step__description,
+.step__img--wrapper {
+  width: 50%;
 }
 
 /*
@@ -660,7 +668,7 @@ VALUEs
 }
 
 .value__name {
-  margin-left: 12px;
+  margin-top: 12px;
   font-size: 20px;
   font-weight: bold;
   color: #243e63;
@@ -982,7 +990,7 @@ TESTIMONIALS
   background: rgb(237, 242, 247);
   border-radius: 50%;
   margin: 0px 12px;
-  transition: 300ms;
+  transition: all 300ms ease;
 }
 
 .testimonial__button svg {
@@ -1185,8 +1193,8 @@ footer {
 
 .footer__bottom {
   display: flex;
+  align-items: baseline;
   justify-content: space-between;
-  align-items: center;
 }
 
 .footer__logo {
@@ -1207,15 +1215,26 @@ footer {
   letter-spacing: 0.05em;
 }
 
+.footer__logo--img,
+.footer__logo--text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
 .footer__copyright {
   color: rgb(203, 213, 224);
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  margin-top: -28px;
 }
 
 .footer__socials {
   display: flex;
   align-items: center;
-  margin-left: 16px;
+  margin-top: -28px;
+  justify-content: flex-end;
 }
 
 .footer__social--link {
@@ -1262,12 +1281,12 @@ MOBILE RESPONSIVENESS
 
   .steps__img--wrapper {
     display: flex;
-    padding: relative;
+    position: relative;
   }
 
   .steps__description,
   .steps__img--wrapper {
-    width: 50%;
+    width: 100%;
   }
 
   .steps__grid {
@@ -1391,7 +1410,7 @@ MOBILE RESPONSIVENESS
   }
 
   .feature__title {
-    line-height: 1;
+    margin-left: 16px;
   }
 
   .quality__description {
@@ -1426,6 +1445,7 @@ MOBILE RESPONSIVENESS
   }
 
   .plan {
+    overflow: hidden;
     margin-right: 0px;
   }
 
@@ -1608,6 +1628,7 @@ MOBILE RESPONSIVENESS
 
   .step__list {
     margin-top: 48px;
+    text-align: center;
   }
 
   .plan__price {
