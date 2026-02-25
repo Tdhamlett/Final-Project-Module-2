@@ -74,8 +74,40 @@ body {
   object-fit: contain;
 }
 
-.topnav a:hover {
+.nav__link {
+  position: relative;
   color: #ffffff;
+  text-decoration: none;
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--accent);
+  transition: width 0.3s ease;  
+}
+
+.nav__link:hover::after {
+  width: 100%;
+}
+
+.nav__link:hover {
+  color: var(--accent);
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--accent);
+  transition: width 0.3s ease;
 }
 
 .hero {
@@ -83,8 +115,7 @@ body {
   margin-bottom: 8px;
   background:
     linear-gradient(to top, rgba(7, 17, 21, 0.96), rgba(7, 17, 21, 0.22)),
-    url("https://images.unsplash.com/photo-1619767886558-efdc259cde1a?q=80&w=1800&auto=format&fit=crop")
-      center/cover no-repeat;
+    url("assets/Lucid Air-header.jpeg") center / cover no-repeat;
   padding: 100px 22px 48px;
   display: flex;
   align-items: flex-end;
