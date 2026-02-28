@@ -39,3 +39,41 @@ document.querySelectorAll(".row-nav").forEach((button) => {
     scrollRow(row, direction);
   });
 });
+
+// ===== Search Feature =====
+
+const searchInput = document.getElementById("searchInput");
+const searchBtn = document.getElementById("searchBtn");
+
+const carPages = {
+  "rivian r1s": "rivian.html",
+  "volvo ex30": "volvo.html",
+  "mach-e": "mache.html",
+  "kia ev9": "ev9.html",
+  "audi q8 e-tron": "audi.html",
+  "nissan ariya": "ariya.html",
+  "polestar 5": "polestar.html",
+  "cadillac celestiq": "celestiq.html",
+  "afeela ev": "afeela.html",
+  "genesis gv90": "gv90.html",
+  "lotus type 135": "lotus.html",
+  "scout traveler ev": "scout.html"
+};
+
+if (searchBtn && searchInput) {
+  searchBtn.addEventListener("click", () => {
+    const userInput = searchInput.value.toLowerCase().trim();
+
+    if (carPages[userInput]) {
+      window.open(carPages[userInput], "_blank");
+    } else {
+      alert("Car not found.");
+    }
+  });
+
+searchInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    searchBtn.click();
+  }
+});
+}
